@@ -1,21 +1,125 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="it">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citazzo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
 
-<title>
-Citazzo
-</title>
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
 
+        .navbar {
+            background: #2b9191;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #2b9191, #57c2c2);
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 12px 24px;
+            font-size: 18px;
+            background: white;
+            color: #2b9191;
+            border: 2px solid white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: #2b9191;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .about {
+            padding: 50px;
+            background: white;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #2b9191;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #444;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background: #2b9191;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
 </head>
-
-
 <body>
 
-<h1>
-Il sito ufficiale di Citazzo è in costruzione
-</h1>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Chi sono</a>
+        <a href="#">Contatti</a>
+    </div>
+
+    <div class="hero">
+        <h1>Benvenuto su Citazzo</h1>
+        <p>Il sito ufficiale di Citazzo è in costruzione.</p>
+        <button onclick="alert('Grazie per aver visitato Citazzo!')">Scopri di più</button>
+    </div>
+
+    <div class="about">
+        <h2>Chi è Citazzo?</h2>
+        <p>Antonio Citi AKA Citazzo, è un artista indie, un videomaker e un content creator.</p>
+    </div>
+
+    <footer>
+        © 2024 Citazzo - Tutti i diritti riservati.
+    </footer>
 
 </body>
-
-
 </html>
